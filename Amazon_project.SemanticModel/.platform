@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Amazon_project"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "f883a59e-2cb5-45d1-888b-94346f6d9aae"
+  }
+}

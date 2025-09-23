@@ -1,0 +1,79 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.2.0/schema.json",
+  "name": "0fd7967fa93c92d27709",
+  "position": {
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "height": 510.45919631793237,
+    "width": 1279.0483271375465
+  },
+  "visual": {
+    "visualType": "lineChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "AMZN_data"
+                    }
+                  },
+                  "Property": "Date"
+                }
+              },
+              "queryRef": "AMZN_data.Date",
+              "nativeQueryRef": "Date",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "AMZN_data"
+                        }
+                      },
+                      "Property": "High"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(AMZN_data.High)",
+              "nativeQueryRef": "Summe von High"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "AMZN_data"
+                  }
+                },
+                "Property": "Date"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
